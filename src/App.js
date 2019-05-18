@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import DataFetch from "./components/customHooks/DataFetch";
+import Err from "./components/customHooks/Err";
+import Header from "./components/Header";
+import "./App.scss";
+import JsonCrawl from "./JsonCrawl";
 
 function App() {
+  const [url, setUrl] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header>
+        <input
+          placeholder="Api Url"
+          defaultValue={url}
+          onChange={e => setUrl(e.target.value)}
+        />
+      </Header>
+      <JsonCrawl url={url} />
     </div>
   );
 }
