@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dp6-90",
+    "name": "Cubone",
+    "nationalPokedexNumber": 104,
+    "imageUrl": "https://images.pokemontcg.io/dp6/90.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/dp6/90_hires.png"
+  },
+  {
+    "id": "ex14-85",
+    "name": "Windstorm",
+    "imageUrl": "https://images.pokemontcg.io/ex14/85.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/ex14/85_hires.png"
+  },
+  {
+    "id": "pop9-17",
+    "name": "Turtwig",
+    "nationalPokedexNumber": 387,
+    "imageUrl": "https://images.pokemontcg.io/pop9/17.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/pop9/17_hires.png"
+  }
+]

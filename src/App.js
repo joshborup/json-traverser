@@ -7,16 +7,14 @@ import JsonCrawl from "./JsonCrawl";
 
 function App() {
   const [url, setUrl] = useState("");
+  const [download, setDownload] = useState(null);
   return (
     <div className="App">
       <Header>
-        <input
-          placeholder="Api Url"
-          defaultValue={url}
-          onChange={e => setUrl(e.target.value)}
-        />
+        <div className="api-url-badge">API URL</div>
+        <input defaultValue={url} onChange={e => setUrl(e.target.value)} />
       </Header>
-      <JsonCrawl url={url} />
+      <JsonCrawl download={download} setDownload={setDownload} url={url} />
     </div>
   );
 }

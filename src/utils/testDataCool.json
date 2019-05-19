@@ -1,0 +1,23 @@
+[
+  {
+    "id": "xy7-4",
+    "name": "Bellossom",
+    "nationalPokedexNumber": 182,
+    "imageUrl": "https://images.pokemontcg.io/xy7/4.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/xy7/4_hires.png"
+  },
+  {
+    "id": "ex8-100",
+    "name": "Hariyama ex",
+    "nationalPokedexNumber": 297,
+    "imageUrl": "https://images.pokemontcg.io/ex8/100.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/ex8/100_hires.png"
+  },
+  {
+    "id": "xyp-XY05",
+    "name": "Xerneas",
+    "nationalPokedexNumber": 716,
+    "imageUrl": "https://images.pokemontcg.io/xyp/XY05.png",
+    "imageUrlHiRes": "https://images.pokemontcg.io/xyp/XY05_hires.png"
+  }
+]
