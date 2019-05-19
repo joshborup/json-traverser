@@ -1,6 +1,15 @@
 import React from "react";
 
-export default function Instructions({ angle, instructions, image, width }) {
+export default function Instructions({
+  angle,
+  instructions,
+  image,
+  width,
+  top,
+  bottom,
+  left,
+  right
+}) {
   return (
     <div
       style={{ transform: `rotate(${angle || 0}deg)` }}
@@ -17,7 +26,7 @@ export default function Instructions({ angle, instructions, image, width }) {
         style={{
           color: "#111111",
           transform: `rotate(-${angle || 0}deg)`,
-          margin: "20px"
+          margin: "35px"
         }}
       >
         {instructions}
