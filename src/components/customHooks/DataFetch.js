@@ -24,6 +24,7 @@ export default function DataFetch(url, prop) {
       })
       .catch(err => {
         console.dir(err);
+        setData({});
         setErr(err.message);
       });
   }, [url, propName, givenUrl]);

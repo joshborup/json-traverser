@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Instructions({
   angle,
   instructions,
   image,
   width,
-  top,
-  bottom,
-  left,
-  right
+  instKey
 }) {
-  return (
+  const [store, setStore] = useState(localStorage.getItem(instKey));
+  useEffect(() => {
+    console.log(store);
+    if (!store) {
+      localStorage.setItem(instKey, "true");
+    }
+  }, [store]);
+
+  return store === "true" ? (
+    ""
+  ) : (
     <div
-      style={{ transform: `rotate(${angle || 0}deg)` }}
+      style={{ transform: `rotate(${angle || 0}deg)`, overflow: "hidden" }}
       className="instructions"
     >
       <img

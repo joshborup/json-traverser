@@ -48,11 +48,12 @@ export default function JsonCrawler({ url }) {
   const jsObj = JSON.stringify(custom, undefined, 2);
   return (
     <div>
-      <Instructions
+      {/* <Instructions
+        instKey="test"
         image={arrow}
         instructions="test instructions"
         angle={125}
-      />
+      /> */}
       {/* <Instructions
         image={arrow}
         instructions="doasdfklsdajflkjhfjhalkshdflkahsdfkha this!"
@@ -60,6 +61,7 @@ export default function JsonCrawler({ url }) {
       />
       <Instructions image={arrow} instructions="do jdjsdja this!" angle={0} />
       <Instructions image={arrow} instructions="do this!" angle={275} /> */}
+      <span style={{ color: "red" }}>{err}</span>
       <div className="input-area-container">
         <div>
           <div>
@@ -176,8 +178,6 @@ export default function JsonCrawler({ url }) {
           )}
         </div>
       </div>
-
-      {err}
     </div>
   );
 }
